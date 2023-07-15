@@ -1,3 +1,5 @@
+Great article on Vicuna: https://lmsys.org/blog/2023-03-30-vicuna/ 
+
 # FastChat
 | [**Demo**](https://chat.lmsys.org/) | [**Arena**](https://arena.lmsys.org) | [**Discord**](https://discord.gg/HSWAKCrnFx) | [**Twitter**](https://twitter.com/lmsysorg) |
 
