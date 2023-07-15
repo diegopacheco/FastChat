@@ -1,3 +1,4 @@
 #!/bin/bash
 
-pip3.10 install fschat
+sudo apt install nvidia-cuda-toolkit
+pip3 install fschat
