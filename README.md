@@ -1,5 +1,38 @@
 Great article on Vicuna: https://lmsys.org/blog/2023-03-30-vicuna/ 
 
+## CUDA Troubleshooting
+
+I use intel CPU, CUDA need to be installed. 
+Requires latest nvidia driver + restart.
+After installing cude and nvidia-smi - you need to be able to run
+this command and this similar output.
+```bash
+nvidia-smi
+```
+```bash
+Sat Jul 15 00:24:14 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 1660 Ti     Off | 00000000:01:00.0  On |                  N/A |
+| N/A   78C    P8               8W /  80W |    134MiB /  6144MiB |     30%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      4143      G   /usr/lib/xorg/Xorg                          133MiB |
++---------------------------------------------------------------------------------------+
+
+```
+
 # FastChat
 | [**Demo**](https://chat.lmsys.org/) | [**Arena**](https://arena.lmsys.org) | [**Discord**](https://discord.gg/HSWAKCrnFx) | [**Twitter**](https://twitter.com/lmsysorg) |
 
